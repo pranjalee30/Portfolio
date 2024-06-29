@@ -1,0 +1,94 @@
+/* About Section */
+#about {
+  display: flex;
+  flex-direction: column;
+  padding: 50px 100px;
+  background: linear-gradient(to right, #343c43, #282c34);
+  color: rgb(134, 153, 170);
+  overflow: hidden;
+}
+
+/* Container Styles */
+#about .container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Heading Styles */
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  animation: fadeIn 2s ease-out;
+}
+
+/* Text Block Styles */
+.text p {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+.text h1 {
+  font-size: 2.5rem;
+  color: #00a8a8;
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+/* Animation for #ani */
+#ani {
+  font-weight: bold;
+  color: #00a8a8;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  padding: 10px;
+}
+
+/* Button Styles */
+.c-btn {
+  background-color: #ff5733;
+  color: #fff;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.c-btn:hover {
+  background-color: #c70039;
+  transform: scale(1.1);
+}
+
+/* Animation for About Me section */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  .text p {
+    font-size: 1rem;
+  }
+
+  .text h1 {
+    font-size: 2rem;
+  }
+
+  .c-btn {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+}
