@@ -5,7 +5,7 @@ function About() {
   const aniRef = useRef(null);
 
   useEffect(() => {
-    const texts = ["Electrical Engineer", "Developer", "Roboticist"];
+    const texts = ["Electrical Engineer", "Developer", "Coder"];
     let currentIndex = 0;
     let charIndex = 0;
     let deleting = false;

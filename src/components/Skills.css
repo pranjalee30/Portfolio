@@ -1,8 +1,10 @@
 /* Skills Section Styles */
 #skills {
-  background-color: #00000a;
   padding: 20px;
-  text-align: start;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center all children horizontally */
+  text-align: center; /* Center text */
 }
 
 #skills span {
@@ -24,6 +26,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 20px; /* Added gap for spacing between icons */
+  justify-content: center; /* Center icons horizontally */
 }
 
 #skills li {
@@ -37,7 +40,13 @@
   width: 100px;
   height: 100px;
   object-fit: contain;
-  gap: 30px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Added transition for hover effects */
+}
+
+/* Hover Effect for Icons */
+#skills img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
 }
 
 #skills p {
