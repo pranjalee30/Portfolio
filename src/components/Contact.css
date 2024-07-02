@@ -1,0 +1,160 @@
+/* Basic styling for the Get In Touch section */
+#contact {
+  background: url("../../public/images/bg1.jpeg");
+  background-size: cover;
+  color: aliceblue;
+  padding: 40px 20px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 900px;
+  margin: 20px auto;
+  animation: fadeInUp 2s ease-out;
+}
+
+/* Heading styling */
+#contact h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #00a8a8;
+}
+
+/* Paragraph styling */
+#contact p {
+  font-size: 1.2rem;
+  color: aliceblue;
+  margin-top: 20px;
+  line-height: 1.6;
+  max-width: 900px;
+  margin: 0 auto 30px auto;
+}
+
+/* Form styling */
+#contact form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Input and textarea styling */
+#contact input,
+#contact textarea {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: aliceblue;
+  color: black;
+  width: 100vh;
+  max-width: 500px;
+}
+/* Animation for fade-in effect */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive styles */
+@media (max-width: 1200px) {
+  #contact h1 {
+    font-size: 2.2rem;
+  }
+  #contact p {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 992px) {
+  #contact {
+    padding: 30px 15px;
+    max-width: 450px;
+  }
+
+  #contact h1 {
+    font-size: 2rem;
+  }
+
+  #contact p {
+    font-size: 1rem;
+    margin: 0 auto 20px auto;
+  }
+
+  #contact form {
+    gap: 10px;
+    padding: 10px;
+  }
+
+  #contact input,
+  #contact textarea {
+    max-width: 100%;
+  }
+
+  #contact button {
+    padding: 12px 25px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #contact {
+    padding: 30px 10px;
+  }
+
+  #contact h1 {
+    font-size: 1.8rem;
+  }
+
+  #contact p {
+    font-size: 0.9rem;
+    margin: 0 auto 15px auto;
+  }
+
+  #contact form {
+    gap: 8px;
+  }
+
+  #contact input,
+  #contact textarea {
+    padding: 10px 15px;
+  }
+
+  #contact button {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 576px) {
+  #contact {
+    padding: 15px 5px;
+  }
+
+  #contact h1 {
+    font-size: 1.6rem;
+  }
+
+  #contact p {
+    font-size: 0.8rem;
+    margin: 0 auto 10px auto;
+  }
+
+  #contact form {
+    gap: 5px;
+  }
+
+  #contact input,
+  #contact textarea {
+    padding: 8px 12px;
+  }
+
+  #contact button {
+    padding: 8px 15px;
+    font-size: 0.8rem;
+  }
+}
