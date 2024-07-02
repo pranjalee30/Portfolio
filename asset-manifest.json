@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/PranjalProtfolio/static/css/main.98e9867c.css",
-    "main.js": "/PranjalProtfolio/static/js/main.b27d430b.js",
-    "static/js/453.1407b060.chunk.js": "/PranjalProtfolio/static/js/453.1407b060.chunk.js",
+    "main.js": "/PranjalProtfolio/static/js/main.d08a1751.js",
+    "static/js/453.d4cc26e8.chunk.js": "/PranjalProtfolio/static/js/453.d4cc26e8.chunk.js",
     "static/media/b1.png": "/PranjalProtfolio/static/media/b1.02cb6419a0d4eb94f0ad.png",
     "static/media/bg1.jpeg": "/PranjalProtfolio/static/media/bg1.3ed1092d52d504217e0f.jpeg",
     "index.html": "/PranjalProtfolio/index.html",
     "main.98e9867c.css.map": "/PranjalProtfolio/static/css/main.98e9867c.css.map",
-    "main.b27d430b.js.map": "/PranjalProtfolio/static/js/main.b27d430b.js.map",
-    "453.1407b060.chunk.js.map": "/PranjalProtfolio/static/js/453.1407b060.chunk.js.map"
+    "main.d08a1751.js.map": "/PranjalProtfolio/static/js/main.d08a1751.js.map",
+    "453.d4cc26e8.chunk.js.map": "/PranjalProtfolio/static/js/453.d4cc26e8.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.98e9867c.css",
-    "static/js/main.b27d430b.js"
+    "static/js/main.d08a1751.js"
   ]
 }
