@@ -1,34 +1,43 @@
 /* About Section */
 #about {
-  display: flex;
-  flex-direction: column;
-  padding: 50px 100px;
-  background: linear-gradient(to right, #343c43, #282c34);
-  color: rgb(134, 153, 170);
-  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+  background: url("../../public/images/b1.png"),
+    url("../../public/images/bg1.jpeg");
+  background-size: 40% 90%, cover;
+  background-position: right, center;
+  background-repeat: no-repeat, no-repeat;
+  clip-path: polygon(50% 0%, 100% 0, 100% 75%, 50% 100%, 0% 75%, 0 0);
 }
 
-/* Container Styles */
-#about .container {
-  max-width: 800px;
-  margin: 0 auto;
+/* Content Styles */
+.content {
+  display: flex;
+  align-content: flex-start;
+  padding-left: 170px;
+  padding-top: 170px;
 }
 
 /* Heading Styles */
 h1 {
-  font-size: 2.5rem;
+  font-size: 2.8rem;
   margin-bottom: 20px;
   animation: fadeIn 2s ease-out;
 }
 
+.text {
+  padding: 10px 50px;
+}
+
 /* Text Block Styles */
 .text p {
-  font-size: 1.2rem;
+  font-size: 1.35rem;
+  color: aliceblue;
   margin: 10px 0;
 }
 
 .text h1 {
-  font-size: 2.5rem;
+  font-size: 2.8rem;
   color: #00a8a8;
   margin: 10px 0;
   font-weight: bold;
@@ -41,19 +50,31 @@ h1 {
   display: inline-block;
   position: relative;
   cursor: pointer;
-  padding: 10px;
+  padding-left: 10px;
 }
 
 /* Button Styles */
-.c-btn {
-  background-color: #ff5733;
-  color: #fff;
+.btn {
+  display: inline-block;
+  padding: 0.5em 0.75em;
+  font-size: 1.2rem;
+  color: aliceblue;
+  background: linear-gradient(45deg, #142e39, #00a8a8);
   border: none;
-  padding: 15px 30px;
-  border-radius: 5px;
+  border-radius: 2em 1em 2em 0;
   cursor: pointer;
-  font-size: 1rem;
-  transition: background-color 0.3s ease, transform 0.3s ease;
+  text-decoration: none;
+  transition: 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 0.25em 1em rgba(0, 0, 0, 0.2);
+}
+
+.btn:hover {
+  background: linear-gradient(45deg, #00a8a8, #142e39);
+  transform: translateY(-0.125em);
+}
+
+.btn:active {
+  transform: translateY(0);
 }
 
 .c-btn:hover {
@@ -75,6 +96,24 @@ h1 {
 
 /* Responsive Styles */
 @media (max-width: 768px) {
+  #about {
+    height: auto;
+    padding: 20px;
+  }
+
+  .content {
+    flex-direction: column;
+    align-items: right;
+    padding: 50px 30px;
+  }
+
+  .profile-pic {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+    margin-right: 0;
+  }
+
   h1 {
     font-size: 2rem;
   }
@@ -87,7 +126,7 @@ h1 {
     font-size: 2rem;
   }
 
-  .c-btn {
+  .btn {
     padding: 10px 20px;
     font-size: 0.9rem;
   }

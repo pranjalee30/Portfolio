@@ -5,12 +5,41 @@ import "./Skills.css";
 function Skills() {
   return (
     <section id="skills">
-      <h1>Skills</h1>
+      <h1>
+        <span>M</span>e and <br />
+        My Tech Stack
+      </h1>
       <ul>
-        <li>Skill 1</li>
-        <li>Skill 2</li>
-        <li>Skill 3</li>
+        <li>
+          <img src="/images/icons8-c-64.png" alt="C++" />
+        </li>
+        <li>
+          <img src="/images/icons8-html-48.png" alt="HTML" />
+        </li>
+        <li>
+          <img src="/images/icons8-css-64.png" alt="CSS" />
+        </li>
+        <li>
+          <img src="/images/icons8-javascript-64.png" alt="JavaScript" />
+        </li>
+        <li>
+          <img src="/images/icons8-reactjs-68.png" alt="ReactJS" />
+        </li>
+        <li>
+          <img src="/images/icons8-git-64.png" alt="Git" />
+        </li>
+        <li>
+          <img src="/images/icons8-python-94.png" alt="Python" />
+        </li>
+        <li>
+          <img src="/images/icons8-github-64.png" alt="Github" />
+        </li>
       </ul>
+      <p>
+        As a Tech Enthusiast, I'm currently exploring in Software Development,
+        Full Stack Development & pursuing B.tech from National Institute of
+        Technology Agartala and love exploring new technologies.
+      </p>
     </section>
   );
 }

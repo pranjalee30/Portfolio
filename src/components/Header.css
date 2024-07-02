@@ -1,15 +1,11 @@
 /* Base Styles */
 header {
-  background-color: #282c34;
+  background: url("../../public/images/bg1.jpeg");
+  background-size: cover;
   padding: 20px;
   text-align: center;
-  color: white;
-}
-
-.marquee {
-  margin-bottom: 15px;
-  color: #00a8a8;
-  cursor: pointer;
+  color: aliceblue;
+  position: relative;
 }
 
 nav {
@@ -17,12 +13,30 @@ nav {
   justify-content: space-between;
   align-items: center;
   position: relative;
+  z-index: 1;
 }
 
+.logo {
+  color: aliceblue;
+  font-size: 48px;
+  letter-spacing: 2px;
+  font-family: "Georgia", serif;
+  font-weight: 700;
+  position: relative;
+}
+
+.logo span {
+  color: #00a8a8;
+}
 .menu-icon {
   display: none;
   flex-direction: column;
+  justify-content: flex-end;
   cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 2;
 }
 
 .bar {
@@ -35,15 +49,16 @@ nav {
 
 .nav-links {
   list-style: none;
-  padding: 0;
   display: flex;
-  gap: 30px;
-  margin-bottom: -10px;
+  align-items: center;
+  gap: 70px;
 }
+
 .nav-links span {
   display: flex;
   flex-direction: column;
 }
+
 .nav-links li {
   display: inline;
 }
@@ -65,18 +80,25 @@ nav {
     display: flex;
   }
 
+  .logo {
+    padding-right: 0;
+    font-size: 40px;
+    letter-spacing: 3px;
+  }
+
   .nav-links {
     display: none;
     position: absolute;
-    top: 25px;
-    left: -20px;
-    background-color: #282c34;
+    top: 50px;
+    right: -40px;
+    background: url("../../public/images/bg1.jpeg");
+    background-size: cover;
     flex-direction: column;
-    width: 200px;
-    gap: 0px;
+    width: 30%;
     padding: 10px 0;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 0px 0px 5px 0px;
+    border-radius: 0px 0px 5px 5px;
+    z-index: 2;
+    gap: 10px;
   }
 
   .nav-links.open {
@@ -95,9 +117,9 @@ nav {
   }
 
   .nav-links {
-    top: 50px;
-    left: 0;
-    width: 180px;
+    top: 60px;
+    right: 0;
+    width: 100%;
   }
 
   .nav-links a {

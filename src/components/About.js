@@ -5,7 +5,7 @@ function About() {
   const aniRef = useRef(null);
 
   useEffect(() => {
-    const texts = ["Engineer", "Developer", "Roboticist"];
+    const texts = ["Electrical Engineer", "Developer", "Roboticist"];
     let currentIndex = 0;
     let charIndex = 0;
     let deleting = false;
@@ -21,9 +21,9 @@ function About() {
         if (charIndex === 0) {
           deleting = false;
           currentIndex = (currentIndex + 1) % texts.length;
-          setTimeout(type, 500); // Add a short pause before starting the next word
+          setTimeout(type, 800);
         } else {
-          setTimeout(type, 50); // Speed up the delete effect
+          setTimeout(type, 100);
         }
       } else {
         aniRef.current.textContent = texts[currentIndex].substring(
@@ -34,28 +34,36 @@ function About() {
 
         if (charIndex === texts[currentIndex].length) {
           deleting = true;
-          setTimeout(type, 1000); // Add a pause when the word is fully typed
+          setTimeout(type, 1000);
         } else {
-          setTimeout(type, 100); // Speed up the typing effect
+          setTimeout(type, 200);
         }
       }
     };
 
     type();
 
-    return () => clearTimeout(type); // Clear the timeout if the component unmounts
+    return () => clearTimeout(type);
   }, []);
 
   return (
     <div id="about">
-      <div className="text">
-        <p>Hello, I am</p>
-        <h1>Pranjal Kumar</h1>
-        <p>
-          And I am
-          <span id="ani" ref={aniRef}></span>
-        </p>
-        <button className="c-btn">Hire Me</button>
+      <div className="content">
+        <div className="text">
+          <p>Hello, I am</p>
+          <h1>Pranjal Kumar</h1>
+          <p>
+            And I am
+            <span id="ani" ref={aniRef}></span>
+          </p>
+          <a
+            href="/resume.pdf"
+            className="btn"
+            download="Pranjal_Kumar_Resume.pdf"
+          >
+            Resume
+          </a>
+        </div>
       </div>
     </div>
   );

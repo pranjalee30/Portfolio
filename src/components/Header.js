@@ -22,19 +22,18 @@ function Header() {
     setMenuOpen(!menuOpen);
   };
 
-  // Smooth scroll function
   const handleNavigation = (event, targetId) => {
     event.preventDefault();
     document.getElementById(targetId).scrollIntoView({ behavior: "smooth" });
-    setMenuOpen(false); // Close the menu after navigation
+    setMenuOpen(false);
   };
 
   return (
-    <header className="water-effect">
-      <div className="marquee">
-        <marquee>Welcome to My Portfolio!</marquee>
-      </div>
+    <header>
       <nav ref={navRef}>
+        <div class="logo">
+          PRAN<span>JAL</span>
+        </div>
         <div className="menu-icon" onClick={toggleMenu}>
           <div className="bar"></div>
           <div className="bar"></div>
