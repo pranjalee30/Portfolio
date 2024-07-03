@@ -9,21 +9,21 @@ function Projects() {
       description:
         "A modern web app for browsing and ordering cakes with an intuitive and visually appealing interface. Features a responsive design, smooth animations, and an easy-to-navigate cake gallery.",
       link: "https://pranjalee30.github.io/cake/",
-      image: "/images/cake.png",
+      image: `${process.env.PUBLIC_URL}/images/cake.png`,
     },
     {
       title: "Drumkit",
       description:
         "A fun web app that simulates a drum kit with interactive sound effects. Users can play different drum sounds by clicking on buttons or pressing keyboard keys.",
       link: "https://pranjalee30.github.io/drumkit/",
-      image: "/images/drumkit.png",
+      image: `${process.env.PUBLIC_URL}/images/drumkit.png`,
     },
     {
       title: "Fyle",
       description:
         "A modern expense management web application with features for tracking, categorizing, and analyzing expenses. Includes a user-friendly interface for managing personal finances efficiently.",
       link: "https://pranjalee30.github.io/Fyle-Pranjal/",
-      image: "/images/Fyle.png",
+      image: `${process.env.PUBLIC_URL}/images/Fyle.png`,
     },
   ];
 

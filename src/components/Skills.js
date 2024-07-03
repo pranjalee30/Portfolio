@@ -11,28 +11,52 @@ function Skills() {
       </h1>
       <ul>
         <li>
-          <img src="/images/icons8-c-64.png" alt="C++" />
+          <img
+            src={`${process.env.PUBLIC_URL}/images/icons8-c-64.png`}
+            alt="C++"
+          />
         </li>
         <li>
-          <img src="/images/icons8-html-48.png" alt="HTML" />
+          <img
+            src={`${process.env.PUBLIC_URL}/images/icons8-html-48.png`}
+            alt="HTML"
+          />
         </li>
         <li>
-          <img src="/images/icons8-css-64.png" alt="CSS" />
+          <img
+            src={`${process.env.PUBLIC_URL}/images/icons8-css-64.png`}
+            alt="CSS"
+          />
         </li>
         <li>
-          <img src="/images/icons8-javascript-64.png" alt="JavaScript" />
+          <img
+            src={`${process.env.PUBLIC_URL}/images/icons8-javascript-64.png`}
+            alt="JavaScript"
+          />
         </li>
         <li>
-          <img src="/images/icons8-reactjs-68.png" alt="ReactJS" />
+          <img
+            src={`${process.env.PUBLIC_URL}/images/icons8-reactjs-68.png`}
+            alt="ReactJS"
+          />
         </li>
         <li>
-          <img src="/images/icons8-git-64.png" alt="Git" />
+          <img
+            src={`${process.env.PUBLIC_URL}/images/icons8-git-64.png`}
+            alt="Git"
+          />
         </li>
         <li>
-          <img src="/images/icons8-python-94.png" alt="Python" />
+          <img
+            src={`${process.env.PUBLIC_URL}/images/icons8-python-94.png`}
+            alt="Python"
+          />
         </li>
         <li>
-          <img src="/images/icons8-github-64.png" alt="Github" />
+          <img
+            src={`${process.env.PUBLIC_URL}/images/icons8-github-64.png`}
+            alt="Github"
+          />
         </li>
       </ul>
       <p>

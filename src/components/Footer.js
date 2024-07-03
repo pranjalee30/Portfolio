@@ -15,7 +15,10 @@ function Footer() {
             aria-label="X"
           >
             <i className="fab fa-twitter">
-              <img src="/images/icons8-twitter-48.png" alt="X" />
+              <img
+                src={`${process.env.PUBLIC_URL}/images/icons8-twitter-48.png`}
+                alt="X"
+              />
             </i>
           </a>
           <a
@@ -25,7 +28,10 @@ function Footer() {
             aria-label="LinkedIn"
           >
             <i className="fab fa-linkedin-in">
-              <img src="/images/icons8-linkedin-48.png" alt="Linkedin" />
+              <img
+                src={`${process.env.PUBLIC_URL}/images/icons8-linkedin-48.png`}
+                alt="Linkedin"
+              />
             </i>
           </a>
           <a
@@ -35,7 +41,10 @@ function Footer() {
             aria-label="GitHub"
           >
             <i className="fab fa-github">
-              <img src="/images/icons8-github-48.png" alt="Github" />
+              <img
+                src={`${process.env.PUBLIC_URL}/images/icons8-github-48.png`}
+                alt="Github"
+              />
             </i>
           </a>
           <a
@@ -44,7 +53,10 @@ function Footer() {
             aria-label="Email"
           >
             <i className="fas fa-envelope">
-              <img src="/images/icons8-mail-48.png" alt="Gmail" />
+              <img
+                src={`${process.env.PUBLIC_URL}/images/icons8-mail-48.png`}
+                alt="Gmail"
+              />
             </i>
           </a>
           <a
@@ -54,7 +66,10 @@ function Footer() {
             aria-label="Instagram"
           >
             <i className="fab fa-github">
-              <img src="/images/icons8-instagram-48.png" alt="Instagram" />
+              <img
+                src={`${process.env.PUBLIC_URL}/images/icons8-instagram-48.png`}
+                alt="Instagram"
+              />
             </i>
           </a>
         </div>
