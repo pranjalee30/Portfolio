@@ -5,7 +5,7 @@ function About() {
   const aniRef = useRef(null);
 
   useEffect(() => {
-    const texts = ["Electrical Engineer", "Developer", "Coder"];
+    const texts = ["Engineer", "Developer", "Coder"];
     let currentIndex = 0;
     let charIndex = 0;
     let deleting = false;
@@ -57,7 +57,7 @@ function About() {
             <span id="ani" ref={aniRef}></span>
           </p>
           <a
-            href="/resume.pdf"
+            href={`${process.env.PUBLIC_URL}/Pranjal_it.pdf`}
             className="btn"
             download="Pranjal_Kumar_Resume.pdf"
           >

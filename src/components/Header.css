@@ -115,9 +115,9 @@ nav {
   }
 
   .nav-links {
-    top: 60px;
-    right: 0;
-    width: 100%;
+    top: 45px;
+    right: -18px;
+    width: 30%;
   }
 
   .nav-links a {
