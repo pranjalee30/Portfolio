@@ -56,7 +56,9 @@ function About() {
             And I am
             <span id="ani" ref={aniRef}></span>
           </p>
-          <a href="https://drive.google.com/file/d/1cfcrERkuGTBBwX8m30uPw2brPgaRSiKm/view?usp=sharing" className="btn" target="_blank" rel="noopener noreferrer">
+          <a href={`${process.env.PUBLIC_URL}/Pranjal_Kumar.pdf`}
+            className="btn"
+            download="Pranjal_Resume.pdf">
             Resume
           </a>
         </div>
