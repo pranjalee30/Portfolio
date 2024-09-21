@@ -8,8 +8,8 @@ function Projects() {
       title: "Cake Creation",
       description:
         "A modern web app for browsing and ordering cakes with an intuitive and visually appealing interface. Features a responsive design, smooth animations, and an easy-to-navigate cake gallery.",
-      link: "https://pranjalee30.github.io/cake/",
-      image: `${process.env.PUBLIC_URL}/images/cake.png`,
+      link: "https://cake-cyan.vercel.app/",
+      image: `${process.env.PUBLIC_URL}/images/cake-app.png`,
     },
     {
       title: "Drumkit",
@@ -19,11 +19,11 @@ function Projects() {
       image: `${process.env.PUBLIC_URL}/images/drumkit.png`,
     },
     {
-      title: "Fyle",
+      title: "DevDetective",
       description:
-        "A modern expense management web application with features for tracking, categorizing, and analyzing expenses. Includes a user-friendly interface for managing personal finances efficiently.",
-      link: "https://pranjalee30.github.io/Fyle-Pranjal/",
-      image: `${process.env.PUBLIC_URL}/images/Fyle.png`,
+        "DevDetective is a web application that allows users to search for any GitHub profile by username. It features a responsive design for optimal viewing across devices and offers theme change options for enhanced personalization and user experience.",
+      link: "https://devdetective-by-pranjal.vercel.app/",
+      image: `${process.env.PUBLIC_URL}/images/dev.png`,
     },
   ];
 

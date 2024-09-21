@@ -1,12 +1,14 @@
 // src/components/Footer.js
 import React from "react";
-import "./Footer.css";
-
+import "./footer.css";
 function Footer() {
+  const date = new Date();
+  const year = date.getFullYear();
+
   return (
     <footer>
       <div className="footer-content">
-        <p>&copy; 2024 Pranjal Kumar</p>
+        <p>&copy; {year} Pranjal Kumar</p>
         <div className="social-media">
           <a
             href="https://x.com/pranjalk449"
